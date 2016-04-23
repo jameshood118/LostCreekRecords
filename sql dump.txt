@@ -1,0 +1,137 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: 97.74.218.184
+-- Generation Time: Sep 28, 2011 at 12:53 PM
+-- Server version: 5.0.91
+-- PHP Version: 5.1.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `timsblogthing`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blog`
+--
+
+CREATE TABLE `blog` (
+  `Idnum` int(11) NOT NULL,
+  `Date` text NOT NULL,
+  `Title` text NOT NULL,
+  `Message` text NOT NULL,
+  PRIMARY KEY  (`Idnum`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `blog`
+--
+
+INSERT INTO `blog` VALUES(2, '06.23.10', 'Testing Formats', 'This message is to test a few functions we have added to the site, and to make sure that they are displayed properly.\r\n\r\nI also hope to make sure the news items are displaying correctly.. testing edit controls');
+INSERT INTO `blog` VALUES(3, '06.23.10', 'Testing', 'News Functionality works fine, formatting continues.\r\n\r\nSoon We will have the shop up and ready to be tested.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gallery`
+--
+
+CREATE TABLE `gallery` (
+  `image_id` int(11) NOT NULL,
+  `name` text character set latin1 collate latin1_general_ci NOT NULL,
+  `caption` text character set latin1 collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`image_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` VALUES(1, 'Dad1.jpg', '');
+INSERT INTO `gallery` VALUES(2, 'Dad2.jpg', '');
+INSERT INTO `gallery` VALUES(3, 'dad3.jpg', '');
+INSERT INTO `gallery` VALUES(4, 'dad4.jpg', '');
+INSERT INTO `gallery` VALUES(5, 'dad5.jpg', '');
+INSERT INTO `gallery` VALUES(6, 'dad6.jpg', '');
+INSERT INTO `gallery` VALUES(7, 'dad7.jpg', '');
+INSERT INTO `gallery` VALUES(8, 'dad10.jpg', '');
+INSERT INTO `gallery` VALUES(9, 'dad11.jpg', '');
+INSERT INTO `gallery` VALUES(10, 'Tim_with_fish.jpg', '');
+INSERT INTO `gallery` VALUES(11, 'dad12.jpg', '');
+INSERT INTO `gallery` VALUES(12, 'dad13.jpg', '');
+INSERT INTO `gallery` VALUES(13, 'dad14.jpg', '');
+INSERT INTO `gallery` VALUES(14, 'dad15.jpg', '');
+INSERT INTO `gallery` VALUES(15, 'dad16.jpg', '');
+INSERT INTO `gallery` VALUES(16, 'dad17.jpg', '');
+INSERT INTO `gallery` VALUES(17, 'dad18.jpg', '');
+INSERT INTO `gallery` VALUES(18, 'dad 19.jpg', '');
+INSERT INTO `gallery` VALUES(26, 'img010.jpg', '');
+INSERT INTO `gallery` VALUES(19, 'Daddy.jpg', '');
+INSERT INTO `gallery` VALUES(20, 'hillside in Samoa.jpg', '');
+INSERT INTO `gallery` VALUES(21, 'in a tree so to speak.jpg', '');
+INSERT INTO `gallery` VALUES(22, 'more foliage.jpg', '');
+INSERT INTO `gallery` VALUES(23, 'North Dakota Badlands.jpg', '');
+INSERT INTO `gallery` VALUES(24, 'totem pole.jpg', '');
+INSERT INTO `gallery` VALUES(25, 'whale skull.jpg', '');
+INSERT INTO `gallery` VALUES(27, 'IMAGE_028.jpg', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Links`
+--
+
+CREATE TABLE `Links` (
+  `Idnum` int(11) NOT NULL,
+  `Address` text NOT NULL,
+  `Info` text NOT NULL,
+  PRIMARY KEY  (`Idnum`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Links`
+--
+
+INSERT INTO `Links` VALUES(1, 'http://jameshood118.org', 'The Designers Website');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Orders`
+--
+
+CREATE TABLE `Orders` (
+  `Order_Num` int(11) NOT NULL,
+  `Date` text NOT NULL,
+  `Email` text NOT NULL,
+  `Item` text NOT NULL,
+  PRIMARY KEY  (`Order_Num`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Orders`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Users`
+--
+
+CREATE TABLE `Users` (
+  `User_ID` int(11) NOT NULL,
+  `Username` text NOT NULL,
+  `Password` text NOT NULL,
+  PRIMARY KEY  (`User_ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Users`
+--
+
+INSERT INTO `Users` VALUES(0, 'prophet118', 'be1dd0a3ac22b7638dbe0bba16c3103e');

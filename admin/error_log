@@ -1,0 +1,7 @@
+[09-Oct-2011 00:52:21] PHP Warning:  include(../eignore.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/bloodgai/public_html/lostcreek/admin/admin_links.php on line 1
+[09-Oct-2011 00:52:21] PHP Warning:  include(../eignore.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/bloodgai/public_html/lostcreek/admin/admin_links.php on line 1
+[09-Oct-2011 00:52:21] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../eignore.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/bloodgai/public_html/lostcreek/admin/admin_links.php on line 1
+[09-Oct-2011 13:46:05] PHP Warning:  opendir(../images/terragen/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/bloodgai/public_html/lostcreek/admin/admin_gallery.php on line 227
+[09-Oct-2011 13:48:00] PHP Parse error:  syntax error, unexpected '<' in /home/bloodgai/public_html/lostcreek/admin/admin_gallery.php on line 68
+[09-Oct-2011 13:48:18] PHP Parse error:  syntax error, unexpected $end in /home/bloodgai/public_html/lostcreek/admin/admin_gallery.php on line 271
+[09-Oct-2011 22:14:09] PHP Parse error:  syntax error, unexpected $end in /home/bloodgai/public_html/lostcreek/admin/admin_users.php on line 212
